@@ -1,7 +1,8 @@
-import "./menu.css"
 import MenuLink from "../paginaLinks"
+import "./menu.css"
 
 const MenuPrincipal = () =>{
+    
     return(
         <header>
             <nav className="navegacao">
