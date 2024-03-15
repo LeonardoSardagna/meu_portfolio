@@ -1,7 +1,10 @@
+import Banner from "../banner"
 import "./paginaInicial.css"
 const PaginaInicial = () =>{
     return(
-        <h1>Olá mundo!</h1>
+        <main>
+            <Banner/>
+        </main>
     )
 }
 
