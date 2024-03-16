@@ -1,0 +1,9 @@
+.card-ul{
+    padding: 0 6vw 3.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2rem;
+    gap: 1.5em;
+}
