@@ -2,26 +2,26 @@
     {
         "id": 1,
         "titulo": "Portfolio",
-        "texto": " "
+        "texto": "Bem-vindo ao meu portfólio de projetos, um espaço onde compartilho entusiasmo e paixão pelo desenvolvimento web! Este trabalho foi cuidadosamente construído durante o curso de HTML e CSS da Alura, utilizando as tecnologias HTML, CSS e FlexBox. O foco principal foi criar uma experiência visualmente atrativa e responsiva, alinhada às mais modernas e eficientes práticas de desenvolvimento web. para aproveitar este portfólio e espero que você aproveite a jornada tanto quanto eu gostei de construí-la.  \n\nTecnologia usada  \n\n HTML: Utilizado para estruturar o conteúdo do site de forma semântica e acessível.  \n\nCSS: Responsável pelo estilo e design, garantindo uma apresentação visualmente agradável.  \n\nFlexBox: Implementado para criar layouts flexíveis e dinâmicos, proporcionando uma experiência de usuário mais fluida em diferentes dispositivos."
     },
     {
         "id": 2,
         "titulo": "News",
-        "texto": ""
+        "texto": "Site de notícias desenvolvido em HTML e CSS. O projeto visa disponibilizar uma plataforma simples e elegante para apresentação de notícias de forma intuitiva e responsiva.  \n\nTecnologias Utilizadas  \n\nHTML: O conteúdo estrutural do site foi desenvolvido utilizando a linguagem de marcação HTML, garantindo uma organização lógica e semântica das informações.  \n\nCSS: O estilo e o design visual do site foram implementados usando folhas de estilo CSS. Técnicas modernas foram aplicadas para criar uma interface atraente e fácil de navegar."
     },
     {
         "id": 3,
         "titulo": "Coffe and books",
-        "texto": ""
+        "texto": "O principal objetivo deste site é oferecer uma experiência simplificada e eficiente aos amantes de livros. Uma das principais inovações que implementei foi a forma como os livros são gerenciados no site. Anteriormente era necessário adicionar manualmente cada livro, mas agora desenvolvi uma solução que permite a atualização automática da lista de livros através de um pedido.  \n\nTecnologias Utilizadas  \n\nHTML: Usado para estruturar o conteúdo da página.  \n\nCSS: Responsável pelo design e estilo da interface, proporcionando uma experiência visual agradável.  \n\nJavaScript: Implementado para tornar a interação do usuário mais dinâmica e gerenciar a solicitação automática de livros.  \n\nAPI Swiper: Utilizada para criar carrosséis interativos de livros, proporcionando uma experiência de navegação intuitiva."
     },
     {
         "id": 4,
         "titulo": "Pomodoro",
-        "texto": ""
+        "texto": "O Projeto Fokus é um sistema de cronômetro projetado para ajudar os indivíduos a se concentrarem em suas atividades diárias usando a técnica Pomodoro. Este projeto foi desenvolvido como parte de um curso de JavaScript, onde já eram fornecidos HTML e CSS, com foco principal na implementação de JavaScript.\n\nTemporizador Pomodoro\n\nO sistema inclui um cronômetro Pomodoro, uma técnica de gerenciamento de tempo que envolve períodos de trabalho intenso seguidos de pequenos intervalos. Isso ajuda a aumentar a produtividade e manter o foco nas tarefas.\n\nControle de tempo e sons\n\nAlém de monitorar o tempo das sessões Pomodoro, o sistema também pode reproduzir sons personalizados dependendo do estado do cronômetro. Isso proporciona uma experiência auditiva que complementa o gerenciamento do tempo.\n\nLista de tarefas\n\nO Projeto Fokus inclui uma lista de tarefas que permite aos usuários adicionar, excluir e marcar tarefas como concluídas. Isso facilita o rastreamento das atividades planejadas."
     },
     {
         "id": 5,
         "titulo": "Organograma",
-        "texto": ""
+        "texto": "O projeto Rick e Morty Organo é uma aplicação web desenvolvida em React, inspirada na série animada “Rick e Morty”. Consiste em um formulário onde os usuários podem preencher informações para serem agregadas aos times, que se inspiram nos diferentes universos e personagens da série. O site também consome a API Rick and Morty para exibir alguns dos personagens da série.\n\nCaracterísticas\n\nFormulário de Cadastro: Os usuários podem preencher informações pessoais como nome, origem, imagem, categoria. Após preencher o formulário, os usuários são automaticamente adicionados à categoria selecionada.\n\nTecnologias Utilizadas\n\nReact: biblioteca JavaScript para construção de interfaces de usuário.\n\nHTML5: Linguagem de marcação para estruturação de conteúdo web.\n\nCSS3: Linguagem de estilo para design e apresentação de sites.\n\nAPI Rick e Morty: API pública para acessar informações sobre os personagens da série."
     }
 ]
