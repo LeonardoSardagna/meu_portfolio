@@ -5,6 +5,7 @@ import MenuPrincipal from "./paginaMenu/menu";
 import Rodape from "./componentes/rodape";
 import PaginaPadrao from "./componentes/paginaPadrao";
 import PostCard from "./componentes/postCard";
+import PagNaoEncontrada from "./paginas/paginanaoEncontrada";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Route path="/" element={<PaginaPadrao/>}>
           <Route index  element={<PaginaInicial/>}/>
           <Route path="sobremim" element={<Sobremim/>} /> 
-          <Route path="posts/:id" element={<PostCard/>} />
         </Route>
+        <Route path="posts/:id/*" element={<PostCard/>} />
+        <Route path="*" element={<PagNaoEncontrada/>} />
       </Routes>
       <Rodape/>
     </BrowserRouter>

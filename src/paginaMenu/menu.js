@@ -1,4 +1,4 @@
-import MenuLink from "../paginaLinks"
+import MenuLink from "../paginaLinks/index.js"
 import "./menu.css"
 
 const MenuPrincipal = () =>{

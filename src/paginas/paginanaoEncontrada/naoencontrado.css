@@ -1,0 +1,70 @@
+.conteudoContainer {
+    position: relative;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 0 1.5rem 6.5rem;
+}
+
+.texto404{
+    font-family: var(--fonte-secundaria); 
+    color: var(--branco);
+}
+
+.texto404 h1{
+   color: var(--azul-medio);
+   font-weight: 700;
+   font-size: 5rem;
+   margin-top: 0.5em;
+}
+
+.texto404 h2{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.texto404 p{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+
+.botaoimg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.texto404 button{
+    background-color: var(--azul-medio);
+    padding: 0.75rem 1.5rem;
+    color: var(--branco);
+    border: 3px solid var(--azul-medio);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 24px;
+}
+
+.texto404 button:hover{
+    border: 3px solid var(--branco);
+}
+
+.texto404 img{
+    width: 300px;
+    border-radius: 32px;
+}
+
+.conteudoEmBranco{
+    height: 40vh;  
+    background-color: aliceblue;
+}
+
+@media (max-width: 1000px) {
+    
+}
+
+@media (max-width: 744px) {
+    
+}

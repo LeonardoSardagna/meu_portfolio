@@ -1,8 +1,10 @@
-import { useParams } from "react-router-dom"
+import { Route, Routes, useParams } from "react-router-dom"
 import posts from "/Users/leona/OneDrive/Documentos/alura_estudo/Portfolio_Projetos/meu-portfolio/src/json/projeto.json"
 import Paginamodelo from "../paginaModelo"
 import ReactMarkdown from "react-markdown"
 import './postagem.css'
+import PagNaoEncontrada from "../../paginas/paginanaoEncontrada"
+import PaginaPadrao from "../paginaPadrao"
 
 export default function PostCard(){
     const parametro = useParams()
@@ -11,15 +13,26 @@ export default function PostCard(){
         return post.id === Number(parametro.id)
     })
 
+    if(!post){
+        return <PagNaoEncontrada/>
+    }
+
     return(
-        <Paginamodelo
-        titulo={post.titulo}
-        >
-        <div className="post-markdown-container">
-            <ReactMarkdown>
-                {post.texto}
-            </ReactMarkdown>
-        </div>
-        </Paginamodelo>
+        <Routes>
+            <Route path="*" element={<PaginaPadrao/>}>
+                <Route index element={
+                    <Paginamodelo
+                    titulo={post.titulo}
+                    >
+                    <div className="post-markdown-container">
+                        <ReactMarkdown>
+                            {post.texto}
+                        </ReactMarkdown>
+                    </div>
+                    </Paginamodelo>
+                }>
+                </Route>
+            </Route>
+        </Routes>
     )
 }
