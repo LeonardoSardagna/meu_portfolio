@@ -1,13 +1,36 @@
 .navegacao{
     display: flex;
-    height: 100px;
+    height: 10vh;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    background-color: var(--azul-escuro);
+}
+
+.navegacao_link{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--branco);
+    transition: transform .3s ease-in;
+} 
+
+.navegacao_link:hover{
+    transform: scale(1.2) 
+}
+
+@media (max-width: 1000px) {
+    .navegacao {
+        height: 72px;
+    }
+    .navegacao_link{
+        font-size: 1.5rem;
+    } 
 }
 
 @media (max-width: 744px) {
     .navegacao {
         height: 72px;
     }
+    .navegacao_link{
+        font-size: 1.5rem;
+    } 
 }

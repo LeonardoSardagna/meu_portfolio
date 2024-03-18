@@ -1,9 +1,9 @@
 .conteudoContainer {
-    position: relative;
     background-color: var(--azul-escuro);
     color: var(--branco);
     text-align: center;
     padding: 0 1.5rem 6.5rem;
+    border-bottom: 1px solid var(--branco);
 }
 
 .texto404{
@@ -39,7 +39,7 @@
 
 .texto404 button{
     background-color: var(--azul-medio);
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 2rem;
     color: var(--branco);
     border: 3px solid var(--azul-medio);
     cursor: pointer;
@@ -56,15 +56,53 @@
     border-radius: 32px;
 }
 
-.conteudoEmBranco{
-    height: 40vh;  
-    background-color: aliceblue;
-}
-
 @media (max-width: 1000px) {
-    
+
+    .texto404 h1{
+        font-size: 5rem;
+    }
+
+    .texto404 h2{
+        padding: 1em 0.5em;
+        line-height: 1.5em;
+    }
+
+    .texto404 p{
+        text-align: center;
+        hyphens: auto;
+        padding: 0 0.5em;
+        line-height: 1.5em;
+        font-size: 1.8rem;
+        line-height: 1.5em;
+    }
+
+    .texto404 button{
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 744px) {
-    
+    .texto404 h2{
+        hyphens: auto;
+        padding: 1em 0.5em;
+        line-height: 1.5em;
+    }
+
+    .texto404 p{
+        text-align: justify;
+        hyphens: auto;
+        padding: 0 0.5em;
+        line-height: 1.5em;
+    }
+
+    .botaoimg{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 1em;
+        gap:1em
+    }
+
+    .texto404 button{
+        font-size: 1.5rem;
+    }
 }

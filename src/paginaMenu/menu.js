@@ -1,4 +1,4 @@
-import MenuLink from "../paginaLinks/index.js"
+import { Link } from "react-router-dom"
 import "./menu.css"
 
 const MenuPrincipal = () =>{
@@ -6,12 +6,9 @@ const MenuPrincipal = () =>{
     return(
         <header>
             <nav className="navegacao">
-                <MenuLink link="/">
-                    Início
-                </MenuLink>
-                <MenuLink link="/sobremim">
-                    Sobre mim
-                </MenuLink>
+                <Link className="navegacao_link" to="/">
+                    Inicio
+                </Link>
             </nav>
         </header>
     )

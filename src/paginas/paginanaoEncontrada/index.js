@@ -20,7 +20,6 @@ export default function PagNaoEncontrada(){
                     </div>
                 </span>
             </div>
-            <div className="conteudoEmBranco"></div>
         </>
     )
 }

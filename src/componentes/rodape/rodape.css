@@ -1,12 +1,26 @@
 .rodape{
-    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
     background-color: var(--azul-escuro);
-    text-align: center;
 }
 
 .rodape p{
     color: var(--branco);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.3rem;
     font-family: var(fonte-secundaria);
+}
+
+@media (max-width: 1000px) {
+    .rodape p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 744px) {
+    .rodape p{
+        font-size: 1.5rem;
+    }
 }

@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route,  } from "react-router-dom";
 import PaginaInicial from "./componentes/pagina-inicial";
-import Sobremim from "./componentes/sobremim";
 import MenuPrincipal from "./paginaMenu/menu";
 import Rodape from "./componentes/rodape";
 import PaginaPadrao from "./componentes/paginaPadrao";
@@ -14,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<PaginaPadrao/>}>
           <Route index  element={<PaginaInicial/>}/>
-          <Route path="sobremim" element={<Sobremim/>} /> 
         </Route>
         <Route path="posts/:id/*" element={<PostCard/>} />
         <Route path="*" element={<PagNaoEncontrada/>} />
