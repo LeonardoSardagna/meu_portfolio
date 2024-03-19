@@ -6,6 +6,7 @@ import './postagem.css'
 import PagNaoEncontrada from "../../paginas/paginanaoEncontrada"
 import PaginaPadrao from "../paginaPadrao"
 
+
 export default function PostCard(){
     const parametro = useParams()
     
@@ -22,6 +23,7 @@ export default function PostCard(){
             <Route path="*" element={<PaginaPadrao/>}>
                 <Route index element={
                     <Paginamodelo
+                    fotoCapa={`./assets/posts/${post.id}/capa.png`}
                     titulo={post.titulo}
                     >
                     <div className="post-markdown-container">
