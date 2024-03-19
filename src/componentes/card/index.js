@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import "./card.css"
+import styles from "../../componentes/card/card.module.css"
 
-const Card = ({card}) =>{
+export default function Card({card}){
     return (
-        <Link to={`posts/${card.id}`}>
-            <div className="card-descricao">
+        <Link to={`/posts/${card.id}`}>
+            <div className={styles.card_descricao}>
                 <img src={`./assets/posts/${card.id}/capa.png`} alt="Capa de fundo"></img>
                 <h2>{card.titulo}</h2>
                 <button>Ler</button>
@@ -12,5 +12,3 @@ const Card = ({card}) =>{
         </Link>
     )
 }
-
-export default Card

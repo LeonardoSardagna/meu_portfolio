@@ -1,11 +1,11 @@
 import { Route, Routes, useParams } from "react-router-dom"
-import posts from "/Users/leona/OneDrive/Documentos/alura_estudo/Portfolio_Projetos/meu-portfolio/src/json/projeto.json"
+import posts from "../../json/projeto.json"
 import Paginamodelo from "../paginaModelo"
 import ReactMarkdown from "react-markdown"
-import './postagem.css'
+import styles from './postagem.module.css'
 import PagNaoEncontrada from "../../paginas/paginanaoEncontrada"
 import PaginaPadrao from "../paginaPadrao"
-
+import Card from "../card"
 
 export default function PostCard(){
     const parametro = useParams()
@@ -18,19 +18,32 @@ export default function PostCard(){
         return <PagNaoEncontrada/>
     }
 
+    const outrosProjetos = posts
+    .filter((card) => card.id !== Number(parametro.id))
+    .sort((a,b) => b.id - a.id)
+    .slice(0,4)
+
     return(
         <Routes>
             <Route path="*" element={<PaginaPadrao/>}>
                 <Route index element={
                     <Paginamodelo
-                    fotoCapa={`./assets/posts/${post.id}/capa.png`}
+                    fotoCapa={`public/assets/posts/${post.id}/capa.png`}
                     titulo={post.titulo}
                     >
-                    <div className="post-markdown-container">
+                    <div className={styles.post_markdown_container}>
                         <ReactMarkdown>
                             {post.texto}
                         </ReactMarkdown>
                     </div>
+                    <h2>Outros projetos: </h2>
+                    <ul className={styles.postsRecomendados}>
+                        {outrosProjetos.map((card)=>(
+                            <li key={card.id}>
+                                <Card card={card}/>
+                            </li>
+                        ))}
+                    </ul>
                     </Paginamodelo>
                 }>
                 </Route>
@@ -38,3 +51,4 @@ export default function PostCard(){
         </Routes>
     )
 }
+

@@ -1,11 +1,9 @@
-import "./rodape.css"
+import styles from "./rodape.module.css"
 
-const Rodape = () =>{
+export default function Rodape(){
     return(
-        <div className="rodape">
+        <div className={styles.rodape}>
             <p>Desenvolvido por <a href="https://github.com/LeonardoSardagna">Leonardo</a></p>
         </div>
     )
 }
-
-export default Rodape

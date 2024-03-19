@@ -1,4 +1,4 @@
-.card-descricao{
+.card_descricao{
     width: 282px;
     box-shadow: 5px 5px 15px 0px #00000014;
     border-radius: 0 0 10px 10px;
@@ -6,17 +6,17 @@
     transition: transform .3s;
 }
 
-.card-descricao:hover{
+.card_descricao:hover{
     transform: translate(0, -1rem);
 }
 
-.card-descricao p{
+.card_descricao p{
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     font-size: 20px;
 }
 
-.card-descricao button{
+.card_descricao button{
     width: 78px;
     background-color: var(--azul-medio);
     padding: 0.75rem 1.5rem;
@@ -27,11 +27,11 @@
     border-radius: 24px;
 }
 
-.card-descricao button:hover{
+.card_descricao button:hover{
     border: 3px solid var(--azul-escuro);
 }
 
-.card-descricao img{
+.card_descricao img{
     width: 100%;
     border-radius: 10px 10px 0 0;
 }

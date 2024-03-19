@@ -1,16 +1,16 @@
-.post-markdown-container h3,
-.post-markdown-container h4,
-.post-markdown-container h5,
-.post-markdown-container h6 {
+.post_markdown_container h3,
+.post_markdown_container h4,
+.post_markdown_container h5,
+.post_markdown_container h6 {
     font-family: var(--fonte-secundaria);
 }
 
-.post-markdown-container h2 {
+.post_markdown_container h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
 }
 
-.post-markdown-container p {
+.post_markdown_container p {
     text-align: justify;
     hyphens: auto;
     font-size: 1.5rem;
@@ -18,30 +18,39 @@
     margin-bottom: 1rem;
 }
 
-.post-markdown-container a {
+.post_markdown_container a {
     color: #0493d4;
     text-decoration: underline;
 }
 
-/* .post-markdown-container img {
+.postsRecomendados {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* .post_markdown_container img {
     display: block;
     margin: 0 auto;
 } */
 
 @media (max-width: 1000px) {
-    .post-markdown-container p {
+    .post_markdown_container p {
         margin-bottom: 1rem;
     }
 }
 
 @media (max-width: 744px) {
-    .post-markdown-container h2 {
+    .post_markdown_container h2 {
         font-size: 2rem;
         line-height: 2rem;
         margin-bottom: 1.5rem;
     }
 
-    .post-markdown-container p {
+    .post_markdown_container p {
         font-size: 1.5rem;
         line-height: 1.75rem;
     }
