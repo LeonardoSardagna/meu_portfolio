@@ -16,7 +16,7 @@ export default function PagNaoEncontrada(){
                             onClick={()=> navegacao(-1)}
                             >Voltar
                         </button>
-                        <img src="./imagens/erro-404.gif" alt="gif do personagem rick dizendo não"></img>
+                        <img src="/imagens/erro-404.gif" alt="gif do personagem rick dizendo não"></img>
                     </div>
                 </span>
             </div>
