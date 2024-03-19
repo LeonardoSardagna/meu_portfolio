@@ -5,7 +5,7 @@ export default function Card({card}){
     return (
         <Link to={`/posts/${card.id}`}>
             <div className={styles.card_descricao}>
-                <img src={`./assets/posts/${card.id}/capa.png`} alt="Capa de fundo"></img>
+                <img src={`/assets/posts/${card.id}/capa.png`} alt="Capa de fundo"></img>
                 <h2>{card.titulo}</h2>
                 <button>Ler</button>
             </div>
