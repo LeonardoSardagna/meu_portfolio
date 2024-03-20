@@ -28,7 +28,6 @@ export default function PostCard(){
             <Route path="*" element={<PaginaPadrao/>}>
                 <Route index element={
                     <Paginamodelo
-                    fotoCapa={`public/assets/posts/${post.id}/capa.png`}
                     titulo={post.titulo}
                     >
                     <div className={styles.post_markdown_container}>

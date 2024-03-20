@@ -16,17 +16,6 @@
     line-height: 2.25rem;
 }
 
-.fotoCapa {
-    height: 200px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-
 @media (max-width:1000px){
     .titulo{
         font-family: var(--fonte-secundaria);
