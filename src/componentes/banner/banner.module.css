@@ -28,6 +28,10 @@
     hyphens: auto;
 }
 
+.info strong{
+    color: #00BFFF;
+}
+
 .imagem img{
     width: 400px;
 }
@@ -44,15 +48,11 @@
     }
     
     .info p{
-        font-weight: 400;
-        font-size: 1.5rem;
         line-height: 35px;
-        text-align: justify;
-        hyphens: auto;
     }
     
     .imagem img{
-        width: 400px;
+        width: 350px;
         margin: 50px 0 ;
     }
 }
@@ -75,8 +75,6 @@
     .info p{
         font-size: 1.5rem;
         line-height: 32px;
-        text-align: justify;
-        word-spacing: -2px;
     }
 }
 
