@@ -1,27 +1,36 @@
-import { BrowserRouter, Routes, Route,  } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PaginaInicial from "./componentes/pagina-inicial";
-import MenuPrincipal from "./paginaMenu/menu";
-import Rodape from "./componentes/rodape";
 import PaginaPadrao from "./componentes/paginaPadrao";
 import PostCard from "./componentes/postCard";
-import PagNaoEncontrada from "./paginas/paginanaoEncontrada";
 import ScrollToTop from "./componentes/scrollToTop";
 
-function App() {
-  return (
-    <BrowserRouter>
-    <ScrollToTop/>
-      <MenuPrincipal/>
-      <Routes>
-        <Route path="/" element={<PaginaPadrao/>}>
-          <Route index  element={<PaginaInicial/>}/>
-        </Route>
-        <Route path="posts/:id/*" element={<PostCard/>} />
-        <Route path="*" element={<PagNaoEncontrada/>} />
-      </Routes>
-      <Rodape/>
-    </BrowserRouter>
-  );
-}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <ScrollToTop />
+        <PaginaPadrao />
+      </>
+    ),
+    children: [
+      {
+        path: '/',
+        element: <PaginaInicial />
+      }
+    ]
+  },
+  {
+    path: "posts/:id/*",
+    element: (
+      <>
+        <ScrollToTop />
+        <PostCard />
+      </>
+    ),
+  },
+]);
 
-export default App;
+export function App() {
+  return <RouterProvider router={router} />
+}

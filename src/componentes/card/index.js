@@ -7,7 +7,7 @@ export default function Card({card}){
             <div className={styles.card_descricao}>
                 <img src={`/assets/posts/${card.id}/capa.png`} alt="Capa de fundo"></img>
                 <h3>{card.titulo}</h3>
-                <button>Ler</button>
+                <button>Acessar</button>
             </div>
         </Link>
     )
