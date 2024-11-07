@@ -1,5 +1,5 @@
 import { Route, Routes, useParams } from "react-router-dom"
-import posts from "../../json/projeto.json"
+import { projetos } from '../../projetos/projeto.ts'
 import Paginamodelo from "../paginaModelo"
 import ReactMarkdown from "react-markdown"
 import styles from './postagem.module.css'
@@ -10,11 +10,11 @@ import Rodape from "../rodape"
 export default function PostCard() {
     const parametro = useParams()
 
-    const post = posts.find((post) => {
+    const post = projetos.find((post) => {
         return post.id === Number(parametro.id)
     })
 
-    const outrosProjetos = posts
+    const outrosProjetos = projetos
         .filter((card) => card.id !== Number(parametro.id))
         .sort((a, b) => b.id - a.id)
         .slice(0, 4)
@@ -26,12 +26,10 @@ export default function PostCard() {
                     <Route index element={
                         <Paginamodelo
                             titulo={post.titulo}
-                        >
-                            <div className={styles.post_markdown_container}>
-                                <ReactMarkdown>
-                                    {post.texto}
-                                </ReactMarkdown>
-                            </div>
+                            links={post.links}
+                            tecnologia={post.tecnologias}
+                            texto={post.texto}>
+
                             <h2>Outros projetos: </h2>
                             <ul className={styles.postsRecomendados}>
                                 {outrosProjetos.map((card) => (

@@ -26,6 +26,14 @@
     text-align: center;
 }
 
+.titulo_projetos{
+    font-size: 1.75rem;
+    line-height: 80px;
+    font-weight: 700;
+    padding: 0rem 1.5rem 3rem;
+    text-align: center;
+}
+
 .card_descricao{
     width: 282px;
     box-shadow: 5px 5px 15px 0px #00000014;

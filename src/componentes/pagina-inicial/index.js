@@ -1,16 +1,18 @@
 import Card from "../card"
 import styles from "./paginaInicial.module.css"
-import card from "../../json/projeto.json"
+
 import Rodape from "../rodape"
+import { projetos } from '../../projetos/projeto.ts'
 
 export default function PaginaInicial() {
     return (
         <>
             <main>
+                <h2 className={styles.titulo_projetos}>Meus Projetos</h2>
                 <div>
                     <ul className={styles.card_ul}>
-                        {card.map((card) => (
-                            <li key={card.id}><Card card={card} /></li>
+                        {projetos.map((projetos) => (
+                            <li key={projetos.id}><Card card={projetos} /></li>
                         ))}
                     </ul>
                 </div>

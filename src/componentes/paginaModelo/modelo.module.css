@@ -1,51 +1,118 @@
-.container{
+.container {
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 4rem;
 }
 
-.titulo{
+.titulo {
     font-family: var(--fonte-secundaria);
     font-weight: 700;
     font-size: 3rem;
-    padding: 1rem 5rem 0;
+    color: var(--cor-primaria);
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-borda);
 }
 
-.paragrafo{
-    padding: 1rem 7.5rem 2rem;
-    text-align: justify;
+.subTitulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-borda);
+}
+
+.paragrafo {
     font-size: 1.5rem;
     line-height: 2.25rem;
+    text-align: justify;
+    padding: 1rem 0;
 }
 
-@media (max-width:1000px){
-    .titulo{
-        font-family: var(--fonte-secundaria);
-        font-weight: 700;
+.tecnologia {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.tecnologia ul {
+    padding-left: 1.5rem; 
+}
+
+.tecnologia ul li {
+    list-style-type: disc;
+    margin-bottom: 1rem;
+}
+
+.links {
+    font-size: 1.25rem;
+}
+
+.links strong {
+    font-weight: 700;
+    color: var(--cor-secundaria);
+}
+
+.links ul {
+    padding-left: 1.5rem; 
+}
+
+.links ul li {
+    list-style-type: disc;
+    margin-bottom: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: darkblue;
+}
+
+@media (max-width: 1000px) {
+    .titulo {
         font-size: 2.5rem;
         padding: 1rem 2rem 0;
     }
-    
-    .paragrafo{
-        padding: 1rem 4rem 2rem;
-        text-align: justify;
-        hyphens: auto;
-        font-size: 1.5rem;
-        line-height: 2.25rem;
-    }
+
+    .paragrafo {
+        font-size: 1.4rem; 
+        padding: 1rem 2rem;
     }
 
-@media (max-width:744px){
-    .titulo{
-        font-family: var(--fonte-secundaria);
-        font-weight: 700;
-        font-size: 2rem;
-        padding: 1rem 2rem 0;
+    .tecnologia {
+        font-size: 1.2rem; 
     }
-    
-    .paragrafo{
-        padding: 1rem 2rem;
-        text-align: justify;
-        hyphens: auto;
+
+    .links {
+        font-size: 1.2rem; 
+    }
+}
+
+@media (max-width: 744px) {
+    .titulo {
+        font-size: 2rem;
+        padding: 1rem 1rem 0;
+    }
+
+    .paragrafo {
         font-size: 1.25rem;
-        line-height: 1.4;
+        line-height: 1.5;
+        padding: 1rem;
+    }
+
+    .tecnologia {
+        font-size: 1.1rem; 
+    }
+
+    .links ul {
+        padding-left: 1rem;
+    }
+
+    .links {
+        font-size: 1.1rem; 
     }
 }
