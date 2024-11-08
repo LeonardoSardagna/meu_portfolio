@@ -9,11 +9,11 @@
   --azul-medio: #1875E8;
   --cor-fonte-principal: #041833;
   --cor-fonte-post: #444444;
-  --branco: #FFF;
+  --branco: #f8f9fa;
   --fonte-principal: 'Raleway', sans-serif;
   --fonte-secundaria: 'Playfair Display', sans-serif;
- 
   font-family: var(--fonte-principal);
+  background-color: var(--branco);
 }
  
 #root {
