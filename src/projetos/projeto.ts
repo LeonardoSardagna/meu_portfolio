@@ -40,5 +40,26 @@ export const projetos = [
       { label: "Versel", url: "https://organograma-sigma-one.vercel.app/" }
     ]
   },
-
+  {
+    "id": 5,
+    "titulo": "Encurtador de Links",
+    "texto": "Este projeto implementa um sistema simples e funcional de encurtamento de URLs utilizando a infraestrutura da AWS. Ele permite criar links curtos que redirecionam para URLs originais e têm um prazo de expiração configurável. O sistema é totalmente gerenciado de forma serverless, utilizando funções AWS Lambda para processar as requisições de geração e redirecionamento das URLs. As URLs encurtadas e seus metadados são armazenados de forma segura no Amazon S3. O projeto foi dividido em dois repositórios para melhor organização e modularidade. O primeiro repositório, URLShortenerCreator, é responsável pela geração das URLs curtas e pelo armazenamento dos dados no S3. O segundo repositório, ShortURLRedirect, contém a lógica de redirecionamento, validando o código da URL curta e realizando o encaminhamento para o destino original, verificando também o prazo de expiração.",
+    "tecnologias": [
+      "Java 17",
+      "AWS Lambda",
+      "Amazon S3",
+      "AWS API Gateway",
+      "Serverless Architecture"
+    ],
+    "links": [
+      { 
+        "label": "Repositório do primeiro projeto no GitHub", 
+        "url": "https://github.com/LeonardoSardagna/URLShortenerCreator" 
+      },
+      { 
+        "label": "Repositório do segundo projeto no GitHub", 
+        "url": "https://github.com/LeonardoSardagna/ShortURLRedirect" 
+      }
+    ]
+  },  
 ];
