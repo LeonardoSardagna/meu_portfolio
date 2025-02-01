@@ -93,6 +93,13 @@
 }
 
 @media (max-width: 744px) {
+
+    .container {
+        max-width: 1550px;
+        width: 100%;
+        padding: 1rem;
+    }
+
     .titulo {
         font-size: 2rem;
         padding: 1rem 1rem 0;
@@ -100,7 +107,7 @@
 
     .paragrafo {
         font-size: 1.25rem;
-        line-height: 1.5;
+        line-height: 1.4;
         padding: 1rem;
     }
 

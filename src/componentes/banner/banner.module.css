@@ -32,6 +32,10 @@
     color: #00BFFF;
 }
 
+.padrao {
+    color: pink;
+}
+
 .imagem img{
     width: 400px;
 }

@@ -31,17 +31,7 @@ export const projetos = [
     ]
   },
   {
-    id: 4,
-    titulo: "Organograma",
-    texto: `Inspirada na série "Rick e Morty", essa aplicação web permite que os usuários criem times com personagens dos diferentes universos da série. Desenvolvi essa aplicação para colocar em prática meus conhecimentos em React.`,
-    tecnologias: ["React", "HTML5", "CSS3"],
-    links: [
-      { label: "Repositório do projeto Front-end", url: "https://github.com/LeonardoSardagna/organograma.git" },
-      { label: "Versel", url: "https://organograma-sigma-one.vercel.app/" }
-    ]
-  },
-  {
-    "id": 5,
+    "id": 4,
     "titulo": "Encurtador de Links",
     "texto": "Este projeto implementa um sistema simples e funcional de encurtamento de URLs utilizando a infraestrutura da AWS. Ele permite criar links curtos que redirecionam para URLs originais e têm um prazo de expiração configurável. O sistema é totalmente gerenciado de forma serverless, utilizando funções AWS Lambda para processar as requisições de geração e redirecionamento das URLs. As URLs encurtadas e seus metadados são armazenados de forma segura no Amazon S3. O projeto foi dividido em dois repositórios para melhor organização e modularidade. O primeiro repositório, URLShortenerCreator, é responsável pela geração das URLs curtas e pelo armazenamento dos dados no S3. O segundo repositório, ShortURLRedirect, contém a lógica de redirecionamento, validando o código da URL curta e realizando o encaminhamento para o destino original, verificando também o prazo de expiração.",
     "tecnologias": [
